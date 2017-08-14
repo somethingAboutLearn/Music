@@ -1,0 +1,260 @@
+@font-face {font-family: "iconfont";
+	src: url('../iconfont/font_ne44lo24xnnopqfr/iconfont.eot'); /* IE9*/
+	src: url('../iconfont/font_ne44lo24xnnopqfr/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../iconfont/font_ne44lo24xnnopqfr/iconfont.woff') format('woff'), /* chrome, firefox */
+	url('../iconfont/font_ne44lo24xnnopqfr/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+	url('../iconfont/font_ne44lo24xnnopqfr/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/display.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+section{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+.content{
+	width: 100%;
+	height: 85%;
+	display: flex;
+	background-image: url(../img/bj1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.content .content-left{
+	width: 60%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	display: flex;
+	flex-direction: column;
+}
+.content .list-songs li{
+	border-bottom: 1px solid rgba(255,255,255,.3);
+}
+.content .content-right{
+	width: 40%;
+	height: 100%;
+}
+.content .content-right section:first-of-type{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,.5);
+}
+.content .content-right p{
+	color: #fff;
+}
+.content .content-right section:nth-of-type(2){
+	width: 100%;
+	height: 80%;
+}
+#canvas{
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.3);
+}
+.content .menu{
+	width: 100%;
+	height: 80px;
+	background: rgba(0,0,0,.5);
+	display: flex;
+	text-align: center;
+	line-height: 80px;
+}
+.content .menu li{
+	width: 25%;
+	height: 100%;
+	color: #fff;
+}
+.content .list-songs{
+	width: 100%;
+	height: auto;
+	display: flex;
+	text-align: center;
+	line-height: 50px;
+	color: #F6F7F8;
+}
+.content .list-songs li{
+	width: 25%;
+	height: 50px;
+}
+.functionbar{
+	width: 100%;
+	height: 15%;
+	margin: 0 auto;
+	background: rgba(0,0,0,.8);
+	display: flex;
+}
+.functionbar .left{
+	width: 20%;
+	height: 100%;
+	display: flex;
+}
+.functionbar .left > div{
+	width: 33.3333333333%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.functionbar .left span{
+	font-size: 30px;
+	color: #aaa;
+}
+.functionbar .left span:hover{
+	color: #FFFFFF;
+}
+.functionbar .left div:nth-child(2) span{
+	font-size: 40px;
+}
+.functionbar .center{
+	width: 60%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.functionbar .center > section{
+	width: 80%;
+	height: 50%;
+	display: flex;
+}
+.functionbar .center > section > section:first-of-type{
+	display: flex;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+.functionbar .center > section > section:nth-child(2){
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.functionbar .center span{
+	color: #EEEEEE;
+	font-size: 12px;
+}
+.functionbar .center .pogress-all{
+	width: 80%;
+	height: 2px;
+	border-radius: 2px;
+	background: #555;
+	position: absolute;
+	top: 60%;
+	margin-top: -1px;
+	left: 10%;
+}
+.functionbar .center .pogress-preloading{
+	width: 0;
+	height: 2px;
+	border-radius: 2px;
+	background: #fff;
+	position: absolute;
+	top: 60%;
+	margin-top: -1px;
+	left: 10%;
+	transition: width 1s;
+}
+.functionbar .center .pogress-now{
+	width: 0;
+	height: 2px;
+	border-radius: 2px;
+	background: #fff;
+	position: absolute;
+	top: 60%;
+	margin-top: -1px;
+	left: 10%;
+}
+.functionbar .center .spot{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px #fff;
+	position: absolute;
+	top: 60%;
+	margin-top: -5px;
+	left: 9%;
+}
+.functionbar .right{
+	width: 20%;
+	height: 100%;
+	display: flex;
+}
+.functionbar .right > div:first-of-type{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.functionbar .right > div:first-of-type span{
+	color: #fff;
+}
+.functionbar .right > div:nth-of-type(2){
+	width: 80%;
+	height: 100%;
+}
+.functionbar .right > div:nth-of-type(2) section{
+	width: 50%;
+	height: 100%;
+	margin: 0;
+	position: relative;
+}
+.functionbar .right > div:nth-of-type(2) .volume-all{
+	width: 100%;
+	height: 2px;
+	border-radius: 2px;
+	background: #555;
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	left: 0;
+}
+.functionbar .right > div:nth-of-type(2) .volume-now{
+	width: 0;
+	height: 2px;
+	border-radius: 2px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	left: 0;
+}
+.functionbar .right > div:nth-of-type(2) .spot{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -5px;
+	left: 0;
+}

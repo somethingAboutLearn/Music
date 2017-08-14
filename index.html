@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>music</title>
+		<link rel="stylesheet" type="text/css" href="css/music.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/music.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<audio id="audio" src=""></audio>
+		<section>
+			<div class="content">
+				<div class="content-left">
+					<ul class="menu">
+						<li>正在播放</li><li>歌曲</li><li>歌手</li><li>时长</li>
+					</ul>
+					
+				</div>
+				<div class="content-right">
+					<section>
+					</section>
+					<section>
+						<canvas id="canvas" width="" height=""></canvas>
+					</section>
+				</div>
+			</div>
+			<div class="functionbar">
+				<div class="left">
+					<div><span class="iconfont last-sing">&#xe605;</span></div>
+					<div><span class="iconfont play-sing">&#xe601;</span></div>
+					<div><span class="iconfont next-sing">&#xe606;</span></div>
+				</div>
+				<div class="center">
+					<section>
+						<section>
+							<span class="songname"></span>
+							<span> - </span>
+							<span class="singer"></span>
+						</section>
+						<section>
+							<span class="singtimenow"></span>
+							<span class="">/</span>
+							<span class="singtimeall"></span>
+						</section>
+					</section>
+					<section>
+						<div class="pogress-all"></div>
+						<div class="pogress-preloading"></div>
+						<div class="pogress-now"></div>
+						<div class="spot"></div>
+					</section>
+				</div>
+				<div class="right">
+					<div>
+						<span class="iconfont volume">&#xe612;</span>
+					</div>
+					<div>
+						<section>
+							<div class="volume-all"></div>
+							<div class="volume-now"></div>
+							<div class="spot"></div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+//	let time=new Date();
+//	time.setTime(time.getTime()+30*1000);
+//	document.cookie='password=123456;expires='+time.toGMTString();
+//	document.cookie='login=Jiale1';
+//	document.cookie='pasdword=111111';
+//	document.cookie='user=Jiale1';
+	//设置cookie
+//	function setCookie(attr,value,time){
+//		if(time){			//设置指定周期的cookie
+//			let timecurrent=new Date();
+//			timecurrent.setTime(timecurrent.getTime()+time*1000);
+//			return document.cookie=attr+'='+value+';expires='+timecurrent.toGMTString();
+//		}else{				//设置临时cookie
+//			return document.cookie=attr+'='+value;
+//		}
+//	}
+//	setCookie('user','Jiale1',20)
+//	setCookie('password','88888888',20)
+//	
+//	//获取
+//	function getCookie(attr){
+//		let cookies=document.cookie;
+//		let arr=cookies.split('; ');
+//		for(let i=0;i<arr.length;i++){
+//			if(arr[i].split('=')[0]==attr){
+//				return arr[i].split('=')[1];
+//			}
+//		}
+//		return false;
+//	}
+//	delCookie('password')
+//	console.log(getCookie('user'),getCookie('password'))
+//	
+//	//删除
+//	function delCookie(attr){
+//		let timecurrent=new Date();
+//		timecurrent.setTime(timecurrent.getTime()-1);			//设置过期时间
+//		return document.cookie=attr+'=anyvalue;expires='+timecurrent.toGMTString();
+//	}
+//	delCookie('user')
+
+
+//	localStorage.setItem('user','Jiale1');
+//	localStorage.user='JL';
+	localStorage.password='456456';
+	localStorage.login='dfvjkn';
+	localStorage['user']='NG';	
+//	console.log(localStorage.getItem('user'));		//获取
+//	localStorage.clear()
+	console.log(localStorage.key(2))
+	
+</script>
