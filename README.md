@@ -1,5 +1,5 @@
 # MUSIC
-* url： https://university-notes.github.io/Music/
+* url： https://somethingaboutlearn.github.io/Music/
 * audio 音频标签的使用
 * 属性
 	* autoplay 自动播放
